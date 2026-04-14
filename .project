@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>t8.2-gestionalmacen01</name>
+=======
+	<name>t8-gestionalmacen1</name>
+>>>>>>> branch 'master' of https://github.com/3r4yn/Proyectocrud.git
 	<comment></comment>
 	<projects>
 	</projects>

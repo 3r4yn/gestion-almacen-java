@@ -142,6 +142,7 @@ public class MiAlmacen
     
     private static void borrar(){       
       System.out.println("<ELIMINAR>");
+<<<<<<< HEAD
       System.out.println("Introduzca el codigo del producto a borrar: ");
       int cod = leerEntero();
       Producto p = almacen.buscarProducto(cod);
@@ -275,6 +276,59 @@ public class MiAlmacen
        almacen.insertarProducto(p);
        System.out.println("Producto creado con éxito");
        }
+=======
+      System.out.println("Aún no disponible");
+      // IMPLEMENTAR
+    }
+    
+    // Cambia el precio de un producto a partir de su codigo
+    private static void modificarPrecio (){
+       System.out.println("<MODIFICAR PRECIO>");
+       System.out.println("Aún no disponible");
+       // IMPLEMENTAR
+    }
+    
+    
+    
+    // Incrementa el stock
+    private static void comprar(){     
+       System.out.println("<COMPRAR>");
+       System.out.println("Aún no disponible");
+       // IMPLEMENTAR 
+    }
+    
+    // Decrementa el stock
+    private static void vender(){
+        System.out.println("<VENDER>");
+        System.out.println("Aún no disponible");
+       // IMPLEMENTAR
+       
+    }
+    
+    // Listado de todos los productos
+    private static void listar(){        
+         System.out.println("<LISTAR>");
+         almacen.imprimirProductosTodos();
+         
+    }
+    
+    // Listado de todos los productos con stock inferior a stock minimo
+    private static void listarPocoStock(){
+        System.out.println("<LISTAR STOCK BAJO MINIMOS>");
+        List<Producto> lista = almacen.obtenerProductosStockMin();
+        for (Producto p : lista) {
+        	System.out.println(p);
+        }
+    }
+    
+    // Solicita datos al usuario para dar de alta un nuevo producto 
+    // El codigo no se puede repetir
+    private static void crear(){
+       System.out.println("<NUEVO PRODUCTO>");
+       System.out.println("Aún no disponible");
+       // IMPLEMENTAR
+    }
+>>>>>>> branch 'master' of https://github.com/3r4yn/Proyectocrud.git
        
     /**
      * Inserta objetos Producto iniciales para pruebas

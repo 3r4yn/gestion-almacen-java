@@ -24,4 +24,10 @@ public interface  ModeloAbs
     
     List <Producto> obtenerProductosStockMin();
     
+<<<<<<< HEAD
+=======
+    
+    
+    
+>>>>>>> branch 'master' of https://github.com/3r4yn/Proyectocrud.git
 }
