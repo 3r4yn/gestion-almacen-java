@@ -204,26 +204,26 @@ public class MiAlmacen
     
     // Decrementa el stock
     private static void vender(){
-        System.out.println("<VENDER>");
-        System.out.println("Ingresar codigo: ");
-        int cod = leerEntero ();
-        Producto p = almacen.buscarProducto(cod);
-        
-        if(p!=null) {
-        System.out.println("Cantidad vendida: ");
-        int cant = leerEntero();
-        if(cant > 0 && cant <=p.getStock()) {
-        p.setStock(p.getStock() - cant);
-        System.out.println("Venta realizada. Stock restante: "+ p.getStock());
-        
+    	 System.out.println("<VENDER>");
+         System.out.println("Ingresar codigo: ");
+         int cod = leerEntero ();
+         Producto p = almacen.buscarProducto(cod);
+         
+         if(p!=null) {
+         System.out.println("Cantidad vendida: ");
+         int cant = leerEntero();
+         if(cant > 0 && cant <=p.getStock()) {
+         p.setStock(p.getStock() - cant);
+         System.out.println("Venta realizada. Stock restante: "+ p.getStock());
+         
+         }else {
+         	System.out.println("Error: No hay suficiente stock o cantidad invalida.");
+         }
         }else {
-        	System.out.println("Error: No hay suficiente stock o cantidad invalida.");
+        	System.out.println("Producto no encontrado.");
         }
-       }else {
-       	System.out.println("Producto no encontrado.");
-       }
-    }
-    
+     }
+     
     // Listado de todos los productos
     private static void listar(){        
          System.out.println("<LISTAR>");
