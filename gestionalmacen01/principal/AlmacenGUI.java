@@ -25,11 +25,8 @@ public class AlmacenGUI extends JFrame {
     public AlmacenGUI() {
         // Inicialización del modelo (usando ArrayList por defecto)
     
-<<<<<<< HEAD
         almacen = new ModeloArrayList();
-=======
         almacen = new ModeloHashMap();
->>>>>>> branch 'master' of https://github.com/3r4yn/Proyectocrud.git
         
         // Inicializo el almacen con unos datos de prueba
         cargarDatosPrueba();
