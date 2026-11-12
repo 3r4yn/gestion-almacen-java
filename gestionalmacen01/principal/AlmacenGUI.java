@@ -23,9 +23,8 @@ public class AlmacenGUI extends JFrame {
     private DefaultTableModel modeloTabla;
 
     public AlmacenGUI() {
-        // Inicialización del modelo (usando ArrayList por defecto)
+        // Inicialización del modelo (HashMap: búsqueda directa por código)
     
-        almacen = new ModeloArrayList();
         almacen = new ModeloHashMap();
         
         // Inicializo el almacen con unos datos de prueba
